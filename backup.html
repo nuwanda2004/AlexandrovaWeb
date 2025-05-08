@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Средства резервного копирования - Полезные инструменты</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      min-height: 80vh;
+    }
+    header {
+      background: #35424a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 0;
+    }
+    nav ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #e8491d;
+    }
+    footer {
+      background: #35424a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .app-box {
+      background: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .app-box h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #e8491d;
+      padding-bottom: 10px;
+    }
+    .app-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .app-description {
+      flex: 1;
+      min-width: 300px;
+    }
+    .app-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .app-image img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .btn {
+      display: inline-block;
+      background: #35424a;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background: #e8491d;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Средства резервного копирования и восстановления данных</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="backup.html">Средства резервного копирования</a></li>
+    <li><a href="registry.html">Средства работы с реестром</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Обзор средств резервного копирования</h2>
+  <p>Программы резервного копирования помогают создавать копии важных данных и системных настроек, чтобы защитить их от случайного удаления, повреждения файловой системы, вирусных атак или аппаратных сбоев. Ниже представлены популярные решения для резервного копирования и восстановления данных.</p>
+
+  <div class="app-box">
+    <h3>1.1) Yandex Cloud Backup</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>Yandex Cloud Backup — это облачное решение для резервного копирования, которое позволяет создавать и хранить резервные копии виртуальных машин, баз данных и других ресурсов в облачной инфраструктуре Яндекса.</p>
+        <p>Основные возможности:</p>
+        <ul>
+          <li>Автоматическое резервное копирование по расписанию</li>
+          <li>Хранение резервных копий в распределенном облачном хранилище</li>
+          <li>Быстрое восстановление данных из резервных копий</li>
+          <li>Поддержка инкрементального резервного копирования</li>
+          <li>Удобная интеграция с другими сервисами Yandex Cloud</li>
+        </ul>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="Yandex Cloud Backup интерфейс">
+      </div>
+    </div>
+  </div>
+
+  <div class="app-box">
+    <h3>1.2) RuBackup</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>RuBackup — это российское программное обеспечение для централизованного резервного копирования и восстановления данных, ориентированное на корпоративный сегмент и государственные организации.</p>
+        <p>Ключевые особенности:</p>
+        <ul>
+          <li>Полная совместимость с российскими операционными системами</li>
+          <li>Централизованное управление через единую консоль</li>
+          <li>Поддержка различных типов данных и систем хранения</li>
+          <li>Шифрование резервных копий для обеспечения безопасности</li>
+          <li>Гибкие политики хранения и ротации резервных копий</li>
+        </ul>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="RuBackup интерфейс">
+      </div>
+    </div>
+  </div>
+
+  <div class="app-box">
+    <h3>1.3) Handy Backup</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>Handy Backup — это простая и функциональная программа для автоматического резервного копирования данных на компьютерах под управлением Windows. Подходит как для домашнего, так и для корпоративного использования.</p>
+        <p>Преимущества:</p>
+        <ul>
+          <li>Интуитивно понятный интерфейс</li>
+          <li>Множество источников данных для резервного копирования</li>
+          <li>Различные методы резервного копирования (полное, инкрементальное, дифференциальное)</li>
+          <li>Планировщик заданий для автоматизации процессов</li>
+          <li>Поддержка локальных и облачных хранилищ</li>
+        </ul>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="Handy Backup интерфейс">
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="btn">Вернуться на главную</a>
+</div>
+
+<footer>
+  <p>Сайт подготовила Александрова Анастасия &copy; 2025</p>
+</footer>
+</body>
+</html>

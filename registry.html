@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Средства работы с реестром - Полезные инструменты</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      min-height: 80vh;
+    }
+    header {
+      background: #35424a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 0;
+    }
+    nav ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #e8491d;
+    }
+    footer {
+      background: #35424a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .app-box {
+      background: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .app-box h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #e8491d;
+      padding-bottom: 10px;
+    }
+    .app-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .app-description {
+      flex: 1;
+      min-width: 300px;
+    }
+    .app-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .app-image img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .btn {
+      display: inline-block;
+      background: #35424a;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background: #e8491d;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Средства работы с реестром Windows</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="backup.html">Средства резервного копирования</a></li>
+    <li><a href="registry.html">Средства работы с реестром</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Обзор средств работы с реестром</h2>
+  <p>Реестр Windows — это иерархическая база данных, которая хранит настройки низкого уровня для операционной системы и приложений. Правильная работа с реестром позволяет тонко настроить систему, решить проблемы и оптимизировать производительность компьютера. Ниже представлены популярные инструменты для работы с реестром Windows.</p>
+
+  <div class="app-box">
+    <h3>1.1) RegEdit</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>RegEdit (Редактор реестра) — это встроенный в Windows инструмент для просмотра и редактирования реестра, предоставляющий прямой доступ ко всем разделам и параметрам.</p>
+        <p>Основные возможности:</p>
+        <ul>
+          <li>Просмотр иерархической структуры реестра</li>
+          <li>Создание, редактирование и удаление разделов и параметров</li>
+          <li>Импорт и экспорт данных реестра</li>
+          <li>Поиск по реестру</li>
+          <li>Работа с разными типами данных (строковые, DWORD, QWORD и т.д.)</li>
+        </ul>
+        <p>Запуск: Win+R → regedit → Enter</p>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="RegEdit интерфейс">
+      </div>
+    </div>
+  </div>
+
+  <div class="app-box">
+    <h3>1.2) Regmon 7.04</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>Regmon (Registry Monitor) — утилита от Sysinternals (теперь часть Microsoft), позволяющая отслеживать и контролировать обращения программ к реестру Windows в реальном времени.</p>
+        <p>Ключевые особенности:</p>
+        <ul>
+          <li>Мониторинг обращений к реестру в реальном времени</li>
+          <li>Фильтрация событий по процессам, операциям и ключам реестра</li>
+          <li>Отображение подробной информации о каждом обращении</li>
+          <li>Возможность приостановки записи событий</li>
+          <li>Экспорт журнала в текстовые файлы для дальнейшего анализа</li>
+        </ul>
+        <p>Примечание: В современных версиях Windows функциональность Regmon включена в утилиту Process Monitor.</p>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="Regmon интерфейс">
+      </div>
+    </div>
+  </div>
+
+  <div class="app-box">
+    <h3>1.3) CCleaner - раздел работы с реестром</h3>
+    <div class="app-info">
+      <div class="app-description">
+        <p>CCleaner — популярная утилита для оптимизации системы, включающая модуль для поиска и исправления проблем в реестре Windows.</p>
+        <p>Преимущества:</p>
+        <ul>
+          <li>Автоматический поиск ошибок, недействительных ссылок и устаревших записей в реестре</li>
+          <li>Создание резервных копий реестра перед внесением изменений</li>
+          <li>Интуитивно понятный интерфейс, подходящий для начинающих пользователей</li>
+          <li>Возможность выборочного исправления найденных проблем</li>
+          <li>Регулярные обновления для поддержки новых версий Windows</li>
+        </ul>
+      </div>
+      <div class="app-image">
+        <img src="/api/placeholder/400/300" alt="CCleaner - модуль реестра">
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="btn">Вернуться на главную</a>
+</div>
+
+<footer>
+  <p>Сайт подготовила Александрова Анастасия &copy; 2025</p>
+</footer>
+</body>
+</html>
